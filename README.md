@@ -1,4 +1,4 @@
-# Browser Technologies @cmda-minor-web 1920
+# Browser Technologies 
 
 ### Hier vind je mijn website van de oba
 https://manoukk.github.io/project-1-1920/
