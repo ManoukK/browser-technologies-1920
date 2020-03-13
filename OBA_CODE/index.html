@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Course name - Minor Web Development - CMD Amsterdam</title>
+
+</head>
+<body>
+  <script src="libary/routie.js"></script>
+  <button id="printOptie">Print jouw spiekbriefje</button>
+  <header id="siteExplain">
+    <section>
+        <img src="img/punaise.png" alt="punaise">
+        <p>Je eigen werkstuk maken is super leuk! Om een goede werkstuk te hebben moet je wel een goede basis hebben. Wij helpen jou hierbij.
+            Door de stappen te volgen op deze website kan je snel beginnen met het maken van jouw eigen werkstuk. 
+          </p>
+      
+          <p>Je kan deze website uitprinten en met jouw gekozen boeken naar de OBA gaan. Zo kan je snel jouw boeken vinden zonder dat je het vergeet!
+            Jouw uitgeprintte blaadje dient gelijk als spiekbriefje want je hebt gelijk jouw vragen en bronnenlijst bij de hand.
+          </p>
+    </section>
+    <form>
+      <h3>Heb je al een onderwerp?</h3>
+      <fieldset>
+          <input type="radio" id="yes" name="topicQuestion">
+          <label for="yes" name="topicQuestion">Ja</label>
+          <input type="radio" id="no" name="topicQuestion">
+          <label for="no" name="topicQuestion">Nee</label>
+      </fieldset>
+      <fieldset id="search"></fieldset>
+      <fieldset id="topics"></fieldset>
+    </form>
+  </header>
+  <main>
+    <section>
+      <section id="vragenlijstSection">
+          <fieldset id="aksQuestion"></fieldset>
+          <div>
+            <img src="img/plakband.png" alt="punaise">
+            <h3>De boeken die jou gaan helpen bij jouw werkstuk</h3>
+            <p> Hier vind je een selectie van boeken speciaal voor jouw onderwerp. Deze kan je allemaal lenen en lezen
+              bij de OBA. Zit er een boek tussen die je niet wilt lezen? Verwijder deze dan uit jouw lijst. Zo weet je straks naar welke boeken
+              jij op zoek moet in de bibliotheek. 
+            </p>
+          </div>
+      </section>
+      <section id="boekenlijstSection"></section>
+      <section id="bronnenlijstSection"></section>
+  </section>
+  
+  </main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

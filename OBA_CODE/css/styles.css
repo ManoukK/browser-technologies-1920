@@ -1,0 +1,658 @@
+:root {
+  --blue: rgba(103,235,250,1);
+  --blueShade: rgba(209, 249, 253, 1);
+  --purple: rgba(206, 151, 251, 1);
+  --purpleVeryLight: rgba(240, 22,3 253, 1);
+  --pink: rgba(246,165,235,1);
+  --pinkveryLight: rgba(254, 246, 253, 1);
+  --yellow: rgba(253, 223, 126, 1);
+  --yellowVeryLight: rgba(254, 242, 203, 1);
+  --orange: rgba(250, 169, 157, 1);
+  --orangeVeryLight: rgba(254, 237, 235, 1);
+  --orangeLight: rgba(253, 220, 215, 1);
+  --shadowGrey: rgba(224, 224, 224, 1);
+  --white: white;
+  --black: black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0dffd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple);
+}
+
+body {
+  background-color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  margin: 1em auto;
+  width: 80%;
+}
+
+h1:before {
+  background-color: var(--blue);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(1);
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  margin: 0em auto;
+  width: 60%;
+  margin-bottom: 3em;
+}
+
+h3:before {
+  background-color: var(--purple);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(1);
+}
+
+header > section:first-of-type {
+  width: 40%;
+  display: block;
+  margin: 5em auto 7em auto;
+  background-color: var(--pink);
+  padding: 2em;
+  box-shadow: 10px 10px 10px var(--shadowGrey);
+  transform: rotate(-4deg);
+}
+
+header > section:first-of-type > img {
+  position: absolute;
+  width: 5em;
+  margin: -5em 30% 0em 35%;
+}
+
+header > form > fieldset:first-of-type input {
+  visibility: hidden;
+}
+
+header > form fieldset {
+  justify-content: center;
+  text-align: center;
+}
+
+header > form label {
+  position: relative;
+  padding: 1em 2em;
+  text-align: center;
+  /* background-color: var(--purple); */
+  background: linear-gradient(to right, var(--white) 50%, var(--yellow) 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  transition:all 2s ease;
+}
+
+header > form label:before {
+  background-color: var(--yellow);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0px;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header > form label:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+header > form input:checked + label{
+  font-weight: 900;
+  background-position:right bottom;
+}
+
+fieldset {
+  border: none;
+}
+
+#questionBlock {
+  background-color: #F8F8F8;
+  padding: 2em;
+  width: 50%;
+  display: block;
+  margin: 5em auto 7em auto;
+  box-shadow: 10px 10px 10px var(--shadowGrey);
+  background: linear-gradient(
+    to bottom,
+    var(--blue) 5%,
+    var(--white) 0%);
+  background-size: 100% 20px;
+}
+
+#questionBlock > h3 {
+  margin-top: -2em;
+}
+
+input[type="text"] {
+  font-size: 1em;
+  background-color: var(--orangeVeryLight);
+  width: 20em;
+  border: none;
+  border-bottom-style: solid;
+  border-color: var(--orange);
+  padding: 0.5em 1em;
+}
+
+[type="text"]:focus-within {
+  color: black;
+  background-color: var(--orangeLight);
+  outline: none;
+}
+
+button {
+  background-image: url(../img/happyFace.png);
+  background-size: cover;
+  height: 3.5em;  
+  width: 3.5em;
+  background-position: center;
+  position: absolute;
+  outline: none;
+  border: none;
+  margin-left: 1em;
+  background-color: transparent;
+}
+
+button:hover {
+  background-image: url(../img/shockingFace.png);
+  background-color: transparent;
+}
+
+#questionBlock > img {
+  width: 7em;
+  margin-top: -4.5em;
+}
+
+#questionBlock > img:first-of-type {
+  transform: scaleX(-1);
+  margin-left: -5em;
+}
+
+#questionBlock > img:nth-of-type(2) {
+  float: right;
+  margin-right: -5em;
+}
+
+#questionBlock > p {
+  margin: 2em 2em 2em 4em;
+}
+
+#questionBlock div {
+  text-align: center;
+}
+
+#search {
+  margin-top: 1.5em;
+}
+
+#boekenlijstSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#boekenlijstSection > article {
+  position: relative;
+  background-color: var(--white);
+  border-style: solid;
+  border-color: var(--blue);
+  border-width: 0.5em;
+  box-shadow: 10px 10px var(--blueShadow);
+  margin: 1em;
+  padding: 0.5em;
+  width: 25em;
+}
+
+#boekenlijstSection > article h2{
+  margin-top: 1em;
+  margin-left: 0.7em;
+}
+
+
+#boekenlijstSection > article img{
+  float: right;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0em;
+  margin-bottom: 5em;
+  background-color: #F0F0F0;
+  width: 10em;
+}
+
+#boekenlijstSection > article p{
+  margin-left: 1em;
+  margin-top: 0em;
+}
+
+#boekenlijstSection > article > div {
+  margin-bottom: 6em;
+}
+
+
+#boekenlijstSection > article a{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  margin-top: 2em;
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--yellowVeryLight);
+  padding: 0.5em 1em;
+}
+
+#boekenlijstSection > article a:before{
+  background-color: var(--yellow);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#boekenlijstSection > article a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#boekenlijstSection > article div > span{
+  position: absolute;
+  background-color: var(--orangeVeryLight);
+  bottom: 1em;
+  left: 2.5em;
+  /* padding: 0.2em 2em; */
+  padding: 0.5em 1.5em;
+}
+
+#boekenlijstSection > article div > span:hover{
+  background-color: var(--orangeLight);
+}
+
+#boekenlijstSection > article div > span button {
+  margin-top: -1em;
+  left: -3.5em;
+  background-color: transparent;
+  /* margin-left: 1.5em; */
+}
+
+#boekenlijstSection > article div > span:hover button {
+  background-image: url(../img/shockingFace.png);
+  background-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#bronnenlijstSection > table tbody:nth-of-type(even) {
+  /* background-color: rgb(248,248,248); */
+  background-color: var(--pinkveryLight);
+}
+
+#bronnenlijstSection {
+  margin-top: 6em;
+}
+
+#boekenlijstSection > #articleDetailPage {
+  width: 80%;
+}
+
+#boekenlijstSection > #articleDetailPage img {
+  margin-right: 5%;
+  margin-bottom: 1em;
+}
+
+#boekenlijstSection > #articleDetailPage p {
+  max-width: 30em;
+  margin-left: 3em;
+  margin-bottom: 2em;
+}
+
+#boekenlijstSection > #articleDetailPage h2 {
+  max-width: 30em;
+  margin-left: 2em;
+}
+
+#boekenlijstSection > #articleDetailPage table {
+  min-width: 20em;
+  max-width: 70%;
+  margin-left: 3em;
+  margin-right: 1em;
+  margin-bottom: 4em;
+}
+
+#boekenlijstSection > #articleDetailPage td, th {
+  border: none;
+  border-bottom-style: solid;
+  border-color: #dddddd;
+  border-width: 2px;
+  text-align: left;
+  padding: 8px;
+}
+
+#boekenlijstSection > h1 {
+  position: relative;
+  text-align: center;
+  margin: 1em auto;
+  width: 80%;
+  font-size: 2em;
+}
+
+#boekenlijstSection > h1:before {
+  background-color: var(--blue);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(1);
+}
+
+#vragenlijstSection > div{
+  width: 40%;
+  display: block;
+  margin: 0em auto 3em auto;
+  background-color: var(--orange);
+  padding: 2em;
+  box-shadow: 10px 10px 10px var(--shadowGrey);
+}
+
+#vragenlijstSection > div > h3{
+  margin-top: 2em;
+}
+
+#vragenlijstSection > div > img{
+  position: absolute;
+  width: 10em;
+  transform: rotate(-44deg);
+  /* margin-top: -6.5em auto 0em auto; */
+  left: 48%;
+  margin-left: -50px;
+  margin-top: -6.5em;
+}
+
+#topics div {
+  max-width: 40em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topics button {
+  position: relative;
+  background-image: none;
+  width: 10em;
+  height: 13em;
+  background-image: url(../img/balloonpink.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin-top: 1em;
+  background-color: var(--white);
+}
+
+#hulpvragen {
+  position: relative;
+  background-color: #F8F8F8;
+  padding: 2em;
+  width: 50%;
+  display: block;
+  margin: 3em auto 7em auto;
+  box-shadow: 10px 10px 10px var(--shadowGrey);
+  background: linear-gradient(
+    to bottom,
+    var(--blue) 5%,
+    var(--white) 0%);
+  background-size: 100% 20px;
+}
+
+#hulpvragen > img {
+  position: absolute;
+  width: 5em;
+  /* margin: -5em 30% 0em 50%; */
+  margin-top: -5em;
+  margin-left: -2em;
+  transform: scaleX(-1);
+}
+
+
+#topics p {
+  display: block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  margin-bottom: 3em;
+}
+
+#topics ul {
+  display: block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+
+
+#topics button:nth-of-type(1) {
+  background-image: url(../img/balloonpink.png);
+}
+
+#topics button:nth-of-type(2) {
+  background-image: url(../img/balloonpurple.png);
+}
+
+#topics button:nth-of-type(3) {
+  background-image: url(../img/balloonblue.png);
+}
+
+#topics button:nth-of-type(4) {
+  background-image: url(../img/balloonorange.png);
+}
+
+#topics button:nth-of-type(5) {
+  background-image: url(../img/balloonblue.png);
+}
+
+#topics button:nth-of-type(6) {
+  background-image: url(../img/balloonorange.png);
+}
+
+#topics button:nth-of-type(7) {
+  background-image: url(../img/balloonpink.png);
+}
+
+#topics button:nth-of-type(8) {
+  background-image: url(../img/balloonpurple.png);
+}
+
+#topics button:nth-of-type(9) {
+  background-image: url(../img/balloonpink.png);
+}
+
+#topics button:nth-of-type(10) {
+  background-image: url(../img/balloonblue.png);
+}
+
+#topics button:nth-of-type(11) {
+  background-image: url(../img/balloonorange.png);
+}
+
+#topics button:hover {
+  background-image: url(../img/balloonyellow.png);
+}
+
+#questionBlock > ul {
+  margin-left: 2.5em;
+}
+
+#siteExplain > p:first-of-type {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#siteExplain > p:nth-of-type(2) {
+  text-align: center;
+  font-size: 1em;
+}
+
+#siteExplain > p:nth-of-type(2) > a {
+  background: linear-gradient(to right, var(--white) 50%, var(--yellow) 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  transition:all 2s ease;
+
+  position: relative;
+  text-align: center;
+  margin: 1em auto;
+  width: 80%;
+
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  text-decoration: none;
+  color: var(--black);
+}
+#siteExplain > p:nth-of-type(2) > a:before {
+  background-color: var(--yellow);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(1);
+}
+
+#siteExplain > p:nth-of-type(2) > a:hover {
+  background-color: var(--yellow);
+  background-position:right bottom;
+}
+
+#bronnenlijstSection > img {
+  position: absolute;
+  width: 5em;
+  margin: -1em 35% 0em 45%;
+  z-index: 2;
+  background-color: transparent;
+}
+
+#bronnenlijstSection > p {
+  width: 40%;
+  display: block;
+  margin: 5em auto 3em auto;
+  background-color: var(--purple);
+  padding: 4em;
+  box-shadow: 10px 10px 10px var(--shadowGrey);
+  transform: rotate(4deg);
+}
+
+#printOptie {
+  background-image: none;
+  background-color: var(--yellowVeryLight);
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center;
+  width: auto;
+  position: sticky;
+  top: 0;
+  left: 3em;
+  z-index: 100;
+
+
+}
+
+#printOptie:before {
+  background-color: var(--yellow);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0px;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#printOptie:hover:before {
+visibility: visible;
+transform: scaleX(1);
+}
+
+
+@media print {
+  #siteExplain > form {
+    display: none;
+  }
+
+  #siteExplain > p:nth-of-type(2) {
+    display: none;
+  }
+
+  #vragenlijstSection {
+    page-break-after: always;
+  } 
+
+  #vragenlijstSection > div {
+    display: none;
+  }
+
+  #boekenlijstSection > article div > span {
+    display: none;
+  }
+  #boekenlijstSection > article a {
+    display: none;
+  }
+
+  #bronnenlijst {
+    margin-top: 2em;
+    page-break-before: always;
+  } 
+
+  #printOptie {
+    display: none;
+  }
+
+}
