@@ -1,7 +1,7 @@
 # Browser Technologies 
 
 ### OBA website
-https://manoukk.github.io/project-1-1920/
+Link naar mijn OBA website: https://manoukk.github.io/project-1-1920/
 
 Verder heb ik de code in een mapje geplaatst in deze repo, onder OBA_CODE. 
 
