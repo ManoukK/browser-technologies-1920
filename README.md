@@ -24,7 +24,7 @@ Ik wil graag leren om goede formulieren te maken die toegankelijk zijn voor iede
 
 
 ### De website zonder css
-![photo_2020-03-18_14-23-49](https://user-images.githubusercontent.com/45541885/76965227-39578e80-6924-11ea-8359-326076b259a6.jpg)
+![photo_2020-03-18_14-27-55](https://user-images.githubusercontent.com/45541885/76965498-b08d2280-6924-11ea-9a1e-1015ae867de0.jpg)
 
 ### De website met css
 ![photo_2020-03-18_14-23-52](https://user-images.githubusercontent.com/45541885/76965237-3d83ac00-6924-11ea-821e-7869d0743512.jpg)
