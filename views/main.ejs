@@ -44,23 +44,40 @@
 
         <fieldset>
             <legend>Jouw mening</legend>
-            <p>5/10 Wat voor cijfer geef he deze minor?</p>
+            <p>5/10 Wat vond je van deze minor?</p>
 
-            <label for="slecht">Slecht</label>
-            <input type="radio" id="slecht" name="cijfer" value="slecht" <% if (queries.cijfer === "slecht") { %>
-                checked 
-            <% } %>>
+            <label for="slecht">Slecht 
+                <input type="radio" id="slecht" name="cijfer" value="slecht" <% if (queries.cijfer === "slecht") { %>
+                    checked 
+                <% } %>>
+            </label>
+         
 
-            <label for="matig">matig</label>
-            <input type="radio" id="matig" name="cijfer" value="matig" <% if (queries.cijfer === "matig") { %>
-                checked 
-            <% } %>>
+            <label for="matig">Matig
+                <input type="radio" id="matig" name="cijfer" value="matig" <% if (queries.cijfer === "matig") { %>
+                    checked 
+                <% } %>>
+            </label>
 
-            <label for="welOke">wel oke</label>
-            <input type="radio" id="welOke" name="cijfer" value="wel oke" <% if (queries.cijfer === "wel oke") { %>
-                checked 
-            <% } %>>
+            <label for="welOke">Wel oke
+                <input type="radio" id="welOke" name="cijfer" value="wel oke" <% if (queries.cijfer === "wel oke") { %>
+                    checked 
+                <% } %>>
+            </label>
 
+            <label for="goed">goed
+                <input type="radio" id="goed" name="cijfer" value="goed" <% if (queries.cijfer === "goed") { %>
+                    checked 
+                <% } %>>
+            </label>
+
+
+            <label for="fantastisch">Fantastisch!
+                <input type="radio" id="fantastisch" name="cijfer" value="fantastisch" <% if (queries.cijfer === "fantastisch") { %>
+                    checked 
+                <% } %>>
+            </label>
+ 
 
             <!-- <label for="cijfer2">2</label>
             <input type="radio" id="cijfer2" name="cijfer" value="2" checked=""
