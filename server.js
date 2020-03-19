@@ -28,9 +28,23 @@ app.use(express.static('static'));
 app.get('/', function(req, res){ 
     console.log(req.query.fname);
 
+    //shortcuts for queries
+    //q1 = naam
+    //q2 = email
+    //q3 = telefoon nummer
+    //q4a = geboorte dag
+    //q4b = geboorte maand
+    //q4c = geboorte jaar
+
+
     let queries = {
-        fname: "",
-        lname: "",
+        q1: "",
+        q2: "",
+        q3: "",
+        q4a: "",
+        q4b: "",
+        q4c: "",
+        cijfer: "",
     };
 
     if (Object.entries(req.query).length > 0) {

@@ -3,17 +3,84 @@
 
 <form>
     <fieldset>
-      <legend>Persoonlijke gegevens</legend>
+        <legend>Persoonlijke gegevens</legend>
+      
+            <label for="fname"> 1/10 Naam:
+                <input type="text" id="name" name="q1" value="<%= queries.q1 %>"> 
+            </label>
 
-        <label for="name"> Voornaam: 
-            <input type="text" id="name" name="fname" value="<%= queries.fname %>"> 
-        </label>
+            <br>
+      
+            <label for="email"> 2/10 E-mail adres: 
+                <input type="text" id="email" name="q2" value="<%= queries.q2 %>">
+            </label>
+      
+            <br>
+      
+            <label for="telnmr"> 3/10 Telefoon nummer: 
+                <input type="text" id="telnmr" name="q3" inputmode="numeric" pattern="[0-9]*" value="<%= queries.q3 %>">
+            </label>
 
-        <label for="name"> Achternaam: 
-            <input type="text" id="name" name="lname" value="<%= queries.lname %>">
-        </label>
+            <br>
 
-    </fieldset>
+              <label for="geboorteDatum"> 4/10 Geboorte datum: 
+                    <input type="text" id="geboorteDatum" name="q4a" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" placeholder="DD" value="<%= queries.q4a %>">
+                    /
+                    <input type="text" id="geboorteDatum" name="q4b" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" placeholder="MM" value="<%= queries.q4b %>">
+                    /
+                    <input type="text" id="geboorteDatum" name="q4c" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="JJJJ" value="<%= queries.q4c %>">
+            </label>
+
+            <br>
+<!-- 
+            <label for="geboorteDatum"> 4/10 Geboorte datum: 
+                <input type="date" id="geboorteDatum" name="q4a" required pattern="\d{2}-\d{2}-\d{4}" value="<%= queries.q4a %>">
+            </label> -->
+      
+            <br>
+      
+            <input type="submit" value="Sla tussentijds je antwoorden op">
+        </fieldset>
+
+        <fieldset>
+            <legend>Jouw mening</legend>
+            <p>5/10 Wat voor cijfer geef he deze minor?</p>
+
+            <label for="slecht">Slecht</label>
+            <input type="radio" id="slecht" name="cijfer" value="slecht" <% if (queries.cijfer === "slecht") { %>
+                checked 
+            <% } %>>
+
+            <label for="matig">matig</label>
+            <input type="radio" id="matig" name="cijfer" value="matig" <% if (queries.cijfer === "matig") { %>
+                checked 
+            <% } %>>
+
+            <label for="welOke">wel oke</label>
+            <input type="radio" id="welOke" name="cijfer" value="wel oke" <% if (queries.cijfer === "wel oke") { %>
+                checked 
+            <% } %>>
+
+
+            <!-- <label for="cijfer2">2</label>
+            <input type="radio" id="cijfer2" name="cijfer" value="2" checked=""
+            <%= function isThisChecked() { 
+                const cijferChecked = document.getElementById("cijfer2");
+                if (queries.cijfer === 2){
+                    cijferChecked.checked == true} 
+                else {
+                    cijferChecked.checked == false}} %> > -->
+
+            <!-- <label for="cijfer3">3</label>
+            <input type="radio" id="cijfer3" name="cijfer" value="3" checked="false"
+            <%= function isThisChecked() { 
+                const cijferChecked = document.getElementById("cijfer3");
+                if (queries.cijfer === 3){
+                    cijferChecked.checked == true} 
+                else {
+                    cijferChecked.checked == false}} %> > -->
+
+        </fieldset>
 </form>
 
 <%- include ('partials/footer.ejs') %>
