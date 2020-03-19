@@ -1,0 +1,20 @@
+<%- include ('partials/head.ejs') %>
+<%- include ('partials/header.ejs') %>
+
+<form>
+    <fieldset>
+      <legend>Persoonlijke gegevens</legend>
+
+        <label for="name"> Voornaam: 
+            <input type="text" id="name" name="fname" value="<%= queries.fname %>"> 
+        </label>
+
+        <label for="name"> Achternaam: 
+            <input type="text" id="name" name="lname" value="<%= queries.lname %>">
+        </label>
+
+    </fieldset>
+</form>
+
+<%- include ('partials/footer.ejs') %>
+
