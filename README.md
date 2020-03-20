@@ -2,6 +2,7 @@
 
 ## waar ik feedback op wil: 
 - ik heb nu een tweede scherm, een soort tussenstap waar de gebruiker doorheen moet om door te gaan maar ik vroeg me af of het wel een goede laag was. 
+- Ik gebruik voor de link nu een textarea. Is er misschien een betere element dat als de gebruiker daar naartoe navigeerd met zijn toetsenbord dat diegene het dan gelijk kan kopiëren?
 
 ## Opdracht 1
 #### OBA website
