@@ -13,10 +13,12 @@
     "build:css": "node scripts/build-css.js",
     "build:manifest": "node scripts/build-manifest.js",
     "build:serviceworker": "node scripts/build-serviceworker.js",
+    "build:images": "node scripts/build-img.js",
     "watch": "run-p watch:*",
     "watch:css": "chokidar 'public/css/*.css' --command 'npm run build:css'",
     "watch:manifest": "chokidar 'public/manifest.json' --command 'npm run build:manifest'",
     "watch:serviceworker": "chokidar 'public/service-worker.js' --command 'npm run build:serviceworker'",
+    "watch:images": "chokidar 'public/img/*' --command 'npm run build:images'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
