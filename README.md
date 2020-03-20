@@ -1,6 +1,7 @@
 # Browser Technologies 
 
 ## waar ik feedback op wil: 
+- Ik gebruik voor de link nu een textarea. Is er misschien een betere element dat als de gebruiker daar naartoe navigeerd met zijn toetsenbord dat diegene het dan gelijk kan kopiëren?
 - ik heb nu een tweede scherm, een soort tussenstap waar de gebruiker doorheen moet om door te gaan maar ik vroeg me af of het wel een goede laag was. 
 
 Dit is nu mijn tussenstap scherm:
@@ -9,7 +10,6 @@ ____________________________________
 ![Schermafbeelding 2020-03-20 om 14 44 06](https://user-images.githubusercontent.com/45541885/77169157-52de0f00-6ab9-11ea-9fdf-1a6f43aadb8e.png)
 
 ____________________________________
-- Ik gebruik voor de link nu een textarea. Is er misschien een betere element dat als de gebruiker daar naartoe navigeerd met zijn toetsenbord dat diegene het dan gelijk kan kopiëren?
 
 ## Opdracht 1
 #### OBA website
