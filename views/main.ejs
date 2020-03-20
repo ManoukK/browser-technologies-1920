@@ -1,6 +1,7 @@
 <%- include ('partials/head.ejs') %>
 <%- include ('partials/header.ejs') %>
 
+<h2>Stap 1 van de 3</h2>
 <form>
     <fieldset>
         <legend>Persoonlijke gegevens</legend>
@@ -17,8 +18,8 @@
       
             <br>
       
-            <label for="telnmr"> 3/10 Telefoon nummer: 
-                <input type="text" id="telnmr" name="q3" inputmode="numeric" pattern="[0-9]*" value="<%= queries.q3 %>">
+            <label for="telnmr"> 3/10 Telefoonnummer: 
+                <input type="text" id="telnmr" name="q3" inputmode="numeric" pattern="[0-9]{2}[-][0-9]{8}" value="06-<%= queries.q3 %>">
             </label>
 
             <br>
@@ -37,12 +38,9 @@
                 <input type="date" id="geboorteDatum" name="q4a" required pattern="\d{2}-\d{2}-\d{4}" value="<%= queries.q4a %>">
             </label> -->
       
-            <br>
-      
-            <input type="submit" value="Sla tussentijds je antwoorden op">
         </fieldset>
 
-        <fieldset>
+        <!-- <fieldset>
             <legend>Jouw mening</legend>
             <p>5/10 Wat vond je van deze minor?</p>
 
@@ -77,28 +75,13 @@
                     checked 
                 <% } %>>
             </label>
- 
 
-            <!-- <label for="cijfer2">2</label>
-            <input type="radio" id="cijfer2" name="cijfer" value="2" checked=""
-            <%= function isThisChecked() { 
-                const cijferChecked = document.getElementById("cijfer2");
-                if (queries.cijfer === 2){
-                    cijferChecked.checked == true} 
-                else {
-                    cijferChecked.checked == false}} %> > -->
+        </fieldset> -->
 
-            <!-- <label for="cijfer3">3</label>
-            <input type="radio" id="cijfer3" name="cijfer" value="3" checked="false"
-            <%= function isThisChecked() { 
-                const cijferChecked = document.getElementById("cijfer3");
-                if (queries.cijfer === 3){
-                    cijferChecked.checked == true} 
-                else {
-                    cijferChecked.checked == false}} %> > -->
-
-        </fieldset>
+        <input type="submit" value="Submit" formaction="/savePage1">
 </form>
+
+
 
 <%- include ('partials/footer.ejs') %>
 

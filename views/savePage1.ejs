@@ -1,0 +1,17 @@
+<%- include ('partials/head.ejs') %>
+<%- include ('partials/header.ejs') %>
+
+<h2>Kloppen deze antwoorden?</h2>
+
+<ul>
+    <li>Naam: <%= queries.q1 %></li>
+    <li>Email: <%= queries.q2 %></li>
+    <li>Telefoonnummer: <%= queries.q3 %></li>
+    <li>Geboortedatum: <%= queries.q4b %>/<%= queries.q4a %>/<%= queries.q4c %></li>
+</ul>
+
+<p>Wil je nu de enquete pauzeren? Kopieër dan de link die hieronder staat en bewaar deze goed. </p>
+
+<textarea rows="5" cols="50" readonly>http://localhost:2121/<%= url %></textarea>
+
+<%- include ('partials/footer.ejs') %>

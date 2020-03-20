@@ -8,35 +8,34 @@ app.set('views', 'views');
 
 app.use(express.static('static'));
 
-
-
-// app.get('/:id', function(req, res){ 
-//     //hier heeft Robin mij mee geholpen. 
-//     // const index = req.params.id;
-//     // const renderData = results[index]
-//     const username = req.body.name
-//     res.render('detail', { username })
-// });
-
-// app.get('/', function(req, res){ 
-//     data.getData()
-//     .then(function(results) { 
-//         res.render('main', { results })
-//     });
-// });
-
-app.get('/', function(req, res){ 
-    console.log(req.query.fname);
-
     //shortcuts for queries
     //q1 = naam
     //q2 = email
-    //q3 = telefoon nummer
+    //q3 = Telefoonnummer
     //q4a = geboorte dag
     //q4b = geboorte maand
     //q4c = geboorte jaar
 
+app.get("/savePage1", (req, res) => {
+    let url = req.url;
+    let queries = {
+        q1: "",
+        q2: "",
+        q3: "",
+        q4a: "",
+        q4b: "",
+        q4c: "",
+        cijfer: "",
+    };
 
+    if (Object.entries(req.query).length > 0) {
+        queries = req.query;
+    }
+
+    res.render('savePage1', { queries, url });
+  });
+
+app.get('/', function(req, res){ 
     let queries = {
         q1: "",
         q2: "",
