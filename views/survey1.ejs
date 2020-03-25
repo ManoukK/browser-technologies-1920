@@ -1,0 +1,99 @@
+<%- include ('partials/head.ejs') %>
+<%- include ('partials/header.ejs') %>
+
+<h2>Stap 1 van de 3</h2>
+<form>
+    <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+      
+            <label for="fname"> 1/9 Naam:
+                <input type="text" id="name" name="q1" value="<%= queries.q1 %>"> 
+            </label>
+
+            <br><br>
+      
+            <label for="email"> 2/9 E-mail: 
+                <input type="text" id="email" name="q2" value="<%= queries.q2 %>">
+            </label>
+      
+            <br><br>
+      
+            <label for="telnmr"> 3/9 Telefoonnummer: 
+                <input type="text" id="telnmr" name="q3" inputmode="numeric" pattern="[0-9]{2}[-][0-9]{8}" value="06-<%= queries.q3 %>">
+            </label>
+            
+            <br><br>
+
+              
+            <label for="geboorteDatum"> 4/9 Leeftijd: 
+                <input type="text" id="geboorteDatum" name="q4" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{4}" placeholder="dd-mm-jjjj" value="<%= queries.q4 %>">
+                <!-- <ul>
+                    <li>
+                        Dag: <input type="text" id="geboorteDatum" name="q4" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" value="<%= queries.q4a %>">
+                    </li>
+                    <li>
+                        Maand: <input type="text" id="geboorteDatum" name="q4" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" value="<%= queries.q4b %>">
+                    </li>
+                    <li>
+                        Jaar: <input type="text" id="geboorteDatum" name="q4" inputmode="numeric" pattern="[0-9]{2}" maxlength="4" value="<%= queries.q4c %>">
+                    </li>
+                </ul> -->
+                <!-- <input type="text" id="geboorteDatum" name="q4" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" value="<%= queries.q4a %>">
+                /
+                <input type="text" id="geboorteDatum" name="q4" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" value="<%= queries.q4b %>">
+                /
+                <input type="text" id="geboorteDatum" name="q4" inputmode="numeric" pattern="[0-9]{2}" maxlength="4" value="<%= queries.q4c %>"> -->
+            <!-- </label> -->
+<!-- 
+            <label for="geboorteDatum"> 4/10 Geboorte datum: 
+                <input type="date" id="geboorteDatum" name="q4a" required pattern="\d{2}-\d{2}-\d{4}" value="<%= queries.q4a %>">
+            </label> -->
+            
+      
+        </fieldset>
+
+        <!-- <fieldset>
+            <legend>Jouw mening</legend>
+            <p>5/10 Wat vond je van deze minor?</p>
+
+            <label for="slecht">Slecht 
+                <input type="radio" id="slecht" name="cijfer" value="slecht" <% if (queries.cijfer === "slecht") { %>
+                    checked 
+                <% } %>>
+            </label>
+         
+
+            <label for="matig">Matig
+                <input type="radio" id="matig" name="cijfer" value="matig" <% if (queries.cijfer === "matig") { %>
+                    checked 
+                <% } %>>
+            </label>
+
+            <label for="welOke">Wel oke
+                <input type="radio" id="welOke" name="cijfer" value="wel oke" <% if (queries.cijfer === "wel oke") { %>
+                    checked 
+                <% } %>>
+            </label>
+
+            <label for="goed">goed
+                <input type="radio" id="goed" name="cijfer" value="goed" <% if (queries.cijfer === "goed") { %>
+                    checked 
+                <% } %>>
+            </label>
+
+
+            <label for="fantastisch">Fantastisch!
+                <input type="radio" id="fantastisch" name="cijfer" value="fantastisch" <% if (queries.cijfer === "fantastisch") { %>
+                    checked 
+                <% } %>>
+            </label>
+
+        </fieldset> -->
+
+        <input type="submit" value="Submit" formaction="/savePage1">
+</form>
+
+
+
+<%- include ('partials/footer.ejs') %>
+

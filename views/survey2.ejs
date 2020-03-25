@@ -1,0 +1,99 @@
+<%- include ('partials/head.ejs') %>
+<%- include ('partials/header.ejs') %>
+
+<h2>Stap 2 van de 3</h2>
+<form>
+    <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+        <section> 5/9 Welk cijfer geef je de minor WebDev?
+            <label for="een"> 1
+                    <input type="radio" id="een" name="q5" value="1" <% if (queries.q5 === "1") { %>
+                        checked 
+                    <% } %>>
+            </label>
+
+            <label for="twee"> 2
+                    <input type="radio" id="twee" name="q5" value="2" <% if (queries.q5 === "2") { %>
+                        checked 
+                    <% } %>>
+            </label>
+
+            <label for="drie"> 3
+                    <input type="radio" id="drie" name="q5" value="3" <% if (queries.q5 === "3") { %>
+                        checked 
+                    <% } %>>
+            </label>
+
+            <label for="vier"> 4
+                    <input type="radio" id="vier" name="q5" value="4" <% if (queries.q5 === "4") { %>
+                        checked 
+                    <% } %>>
+            </label for="een">
+
+            <label for="vijf"> 5
+                    <input type="radio" id="vijf" name="q5" value="5" <% if (queries.q5 === "5") { %>
+                        checked 
+                    <% } %>>
+            </label>
+        </section>
+        <br>
+        <label> 6/9 Onderbouw je antwoord hieronder</label>
+        <br><br>
+        <section> 7/9 Over welke onderwerpen heb jij het meest geleerd?
+            <br>
+            <label for="PE"> Progressive enhancement
+                <input type="checkbox" id="PE" name="q6a" value="PE" <% if (queries.q6a === "PE") { %>
+                    checked 
+                <% } %>>
+            </label>
+            <br>
+            <label for="SSR"> Server side renderen
+                <input type="checkbox" id="SSR" name="q6b" value="SSR" <% if (queries.q6b === "SSR") { %>
+                    checked 
+                <% } %>>
+            </label>
+            <br>
+            <label for="CSS"> Advanced css
+                <input type="checkbox" id="CSS" name="q6c" value="CSS" <% if (queries.q6c === "CSS") { %>
+                    checked 
+                <% } %>>
+            </label>
+            <br>
+            <label for="PRTTPS"> Snel werkende prototypes maken
+                <input type="checkbox" id="PRTTPS" name="q6d" value="PRTTPS" <% if (queries.q6d === "PRTTPS") { %>
+                    checked 
+                <% } %>>
+            </label>
+        </section>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset class="prevQuestions">
+        <legend>Eerder ingevulde vragen</legend>
+            
+        <label for="fname"> 1/9 Naam:
+            <input type="text" id="name" name="q1" value="<%= queries.q1 %>"> 
+        </label>
+    
+        <br><br>
+            
+        <label for="email"> 2/9 E-mail: 
+            <input type="text" id="email" name="q2" value="<%= queries.q2 %>">
+        </label>
+            
+        <br><br>
+            
+        <label for="telnmr"> 3/9 Telefoonnummer: 
+            <input type="text" id="telnmr" name="q3" inputmode="numeric" pattern="[0-9]{2}[-][0-9]{8}" value="<%= queries.q3 %>">
+        </label>
+    
+        <br><br>
+                    
+        <label for="geboorteDatum"> 4/9 Leeftijd: 
+            <input type="text" id="geboorteDatum" name="q4" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{4}" placeholder="dd-mm-jjjj" value="<%= queries.q4 %>">
+        </label>
+    </fieldset>
+    <input type="submit" value="Submit" formaction="/savePage2">
+</form>

@@ -1,87 +1,10 @@
 <%- include ('partials/head.ejs') %>
 <%- include ('partials/header.ejs') %>
 
-<h2>Stap 1 van de 3</h2>
-<form>
-    <fieldset>
-        <legend>Persoonlijke gegevens</legend>
-      
-            <label for="fname"> 1/10 Naam:
-                <input type="text" id="name" name="q1" value="<%= queries.q1 %>"> 
-            </label>
-
-            <br>
-      
-            <label for="email"> 2/10 E-mail adres: 
-                <input type="text" id="email" name="q2" value="<%= queries.q2 %>">
-            </label>
-      
-            <br>
-      
-            <label for="telnmr"> 3/10 Telefoonnummer: 
-                <input type="text" id="telnmr" name="q3" inputmode="numeric" pattern="[0-9]{2}[-][0-9]{8}" value="06-<%= queries.q3 %>">
-            </label>
-
-            <br>
-
-              <label for="geboorteDatum"> 4/10 Geboorte datum: 
-                    <input type="text" id="geboorteDatum" name="q4a" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" placeholder="DD" value="<%= queries.q4a %>">
-                    /
-                    <input type="text" id="geboorteDatum" name="q4b" inputmode="numeric" pattern="[0-9]{2}" maxlength="2" placeholder="MM" value="<%= queries.q4b %>">
-                    /
-                    <input type="text" id="geboorteDatum" name="q4c" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="JJJJ" value="<%= queries.q4c %>">
-            </label>
-
-            <br>
-<!-- 
-            <label for="geboorteDatum"> 4/10 Geboorte datum: 
-                <input type="date" id="geboorteDatum" name="q4a" required pattern="\d{2}-\d{2}-\d{4}" value="<%= queries.q4a %>">
-            </label> -->
-      
-        </fieldset>
-
-        <!-- <fieldset>
-            <legend>Jouw mening</legend>
-            <p>5/10 Wat vond je van deze minor?</p>
-
-            <label for="slecht">Slecht 
-                <input type="radio" id="slecht" name="cijfer" value="slecht" <% if (queries.cijfer === "slecht") { %>
-                    checked 
-                <% } %>>
-            </label>
-         
-
-            <label for="matig">Matig
-                <input type="radio" id="matig" name="cijfer" value="matig" <% if (queries.cijfer === "matig") { %>
-                    checked 
-                <% } %>>
-            </label>
-
-            <label for="welOke">Wel oke
-                <input type="radio" id="welOke" name="cijfer" value="wel oke" <% if (queries.cijfer === "wel oke") { %>
-                    checked 
-                <% } %>>
-            </label>
-
-            <label for="goed">goed
-                <input type="radio" id="goed" name="cijfer" value="goed" <% if (queries.cijfer === "goed") { %>
-                    checked 
-                <% } %>>
-            </label>
-
-
-            <label for="fantastisch">Fantastisch!
-                <input type="radio" id="fantastisch" name="cijfer" value="fantastisch" <% if (queries.cijfer === "fantastisch") { %>
-                    checked 
-                <% } %>>
-            </label>
-
-        </fieldset> -->
-
-        <input type="submit" value="Submit" formaction="/savePage1">
-</form>
-
-
-
-<%- include ('partials/footer.ejs') %>
-
+<p>
+    Daarom vragen wij jou deze enquete zo eerlijk mogelijk in te vullen.
+    Als je vragen en/of opmeringen hebt dan kan je ons bereiken via: 
+    <a href="mailto:webdevminor@cmdmail.nl">webdevminor@cmdmail.nl</a>. Wij zijn ook bereikbaar
+    via telefoon: <a href="tel:8080-808080">8080-808080</a>
+</p>
+<a href="survey1">Begin de enquete</a>
