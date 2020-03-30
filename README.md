@@ -45,5 +45,6 @@ Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit 
 
 ### Credits 
 - Daniel had ontdekt dat je input waardes kan opslaan in de url. Hij heeft mij hiermee geholpen zodat ik dat ook kon gebruiken. 
-- 
+- Bas gaf mij het idee om een pagina animatie te maken met javascript toggles. Ik wilde het eerst in AJAX doen maar dat lukte me niet.
+
 
