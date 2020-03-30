@@ -42,7 +42,7 @@ Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hie
 - [Mijn website in 3 lagen]()
 - [Conclusie]()
 
-### Verdere ideeën voor op de website
+### To Do voor als ik meer tijd had voor dit project
 - Input van het formulier groter maken als de focus erop ligt. 
 - Een mooie offline pagina.
 - Bij het langzaam laden van een pagina een laadscherm laten zien. 
