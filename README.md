@@ -48,7 +48,7 @@ Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hie
 - Bij het langzaam laden van een pagina een laadscherm laten zien. 
 
 ### Bronnen (code)
-- Hoe je een kopie knop kan maken: https://stackoverflow.com/questions/37658524/copying-text-of-textarea-in-clipboard-when-button-is-clicked
+- [Hoe je een kopie knop kan maken](https://stackoverflow.com/questions/37658524/copying-text-of-textarea-in-clipboard-when-button-is-clicked)
 - [Laatste (feest) icoon](https://thenounproject.com/search/?q=party&i=1098631)
 - [Hoe je een event listener kan maken voor toetsenbord](https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event)
 - [Hoe je een event listener kan maken voor touch](https://developer.mozilla.org/en-US/docs/Web/API/Touch_events)
