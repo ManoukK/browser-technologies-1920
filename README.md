@@ -44,7 +44,7 @@ Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hie
 
 ### Verdere ideeën voor op de website
 - Input van het formulier groter maken als de focus erop ligt. 
-
+- Een mooie offline pagina.
 
 ### Bronnen (code)
 - Hoe je een kopie knop kan maken: https://stackoverflow.com/questions/37658524/copying-text-of-textarea-in-clipboard-when-button-is-clicked
