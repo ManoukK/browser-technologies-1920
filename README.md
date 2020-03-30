@@ -48,11 +48,11 @@ Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hie
 
 ### Bronnen (code)
 - Hoe je een kopie knop kan maken: https://stackoverflow.com/questions/37658524/copying-text-of-textarea-in-clipboard-when-button-is-clicked
-- Laatste (feest) icoon: https://thenounproject.com/search/?q=party&i=1098631
-- Hoe je een event listener kan maken voor toetsenbord: https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event
-- Hoe je een event listener kan maken voor touch: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
-- Pagina switch animatie: https://stackoverflow.com/questions/39513705/make-html-element-disappear-with-css-animation
-- Feature detection voor het kopiëren van de url: https://stackoverflow.com/questions/36153898/how-to-detect-copy-to-clipboard-functionality-before-using-it
+- [Laatste (feest) icoon](https://thenounproject.com/search/?q=party&i=1098631)
+- [Hoe je een event listener kan maken voor toetsenbord](https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event)
+- [Hoe je een event listener kan maken voor touch](https://developer.mozilla.org/en-US/docs/Web/API/Touch_events)
+- [Pagina switch animatie:](https://stackoverflow.com/questions/39513705/make-html-element-disappear-with-css-animation)
+- [Feature detection voor het kopiëren van de url](https://stackoverflow.com/questions/36153898/how-to-detect-copy-to-clipboard-functionality-before-using-it)
 
 ### Credits 
 - Daniel had ontdekt dat je input waardes kan opslaan in de url. Hij heeft mij hiermee geholpen zodat ik dat ook kon gebruiken. 
