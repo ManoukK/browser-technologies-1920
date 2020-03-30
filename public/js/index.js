@@ -24,3 +24,7 @@ function copy() {
     textarea.select();
     document.execCommand("copy");
   }
+if (false == document.execCommand('copy')) {
+    document.getElementById("urllink").style.display = "none";
+    document.getElementById("buttonClickUrl").style.display = "none";
+}
