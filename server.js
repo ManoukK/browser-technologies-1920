@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 //zet naar static bij uploaden
-app.use(express.static('public'));
+app.use(express.static('static'));
 
     //shortcuts for queries
     //q1 = naam
@@ -20,130 +20,121 @@ app.use(express.static('public'));
     //q4b = geboorte maand
     //q4c = geboorte jaar
     //q5 = minor cijfer
-    
-app.get("/savePage1", (req, res) => {
-    let url = req.url;
-    let queries = {
-        q1: "",
-        q2: "",
-        q3: "",
-        q4: "",
-        q5: "",
-        q6a: "",
-        q6b: "",
-        q6c: "",
-        q6d: "",
-    };
 
-    if (Object.entries(req.query).length > 0) {
-        queries = req.query;
-    }
-
-    res.render('savePage1', { queries, url });
-});
-
-app.get("/savePage2", (req, res) => {
-    let url = req.url;
-    let queries = {
-        q1: "",
-        q2: "",
-        q3: "",
-        q4: "",
-        q5: "",
-        q6a: "",
-        q6b: "",
-        q6c: "",
-        q6d: "",
-    };
-
-    if (Object.entries(req.query).length > 0) {
-        queries = req.query;
-    }
-
-    res.render('savePage2', { queries, url });
-});
-
-app.get("/savePage2", (req, res) => {
-    let url = req.url;
-    let queries = {
-        q1: "",
-        q2: "",
-        q3: "",
-        q4: "",
-        q5: "",
-        q6a: "",
-        q6b: "",
-        q6c: "",
-        q6d: "",
-    };
-
-    if (Object.entries(req.query).length > 0) {
-        queries = req.query;
-    }
-
-    res.render('savePage2', { queries, url });
-});
-
-app.get("/savePage3", (req, res) => {
-    let url = req.url;
-    let queries = {
-        q1: "",
-        q2: "",
-        q3: "",
-        q4: "",
-        q5: "",
-        q6a: "",
-        q6b: "",
-        q6c: "",
-        q6d: "",
-    };
-
-    if (Object.entries(req.query).length > 0) {
-        queries = req.query;
-    }
-
-    res.render('savePage3', { queries, url });
-});
 
 app.get('/survey1', function(req, res){ 
+    let url = req.url;
     let queries = {
         q1: "",
         q2: "",
         q3: "",
         q4: "",
         q5: "",
-        q6a: "",
-        q6b: "",
-        q6c: "",
-        q6d: "",
+        q7a: "",
+        q7b: "",
+        q7c: "",
+        q7d: "",
+        q8: "",
+        q9: "",
     };
 
     if (Object.entries(req.query).length > 0) {
         queries = req.query;
     }
 
-    res.render('survey1', { queries });
+    res.render('survey1', { queries, url });
 });
 
 app.get('/survey2', function(req, res){ 
+    let url = req.url;
     let queries = {
         q1: "",
         q2: "",
         q3: "",
         q4: "",
         q5: "",
-        q6a: "",
-        q6b: "",
-        q6c: "",
-        q6d: "",
-        
+        q7a: "",
+        q7b: "",
+        q7c: "",
+        q7d: "",
+        q8: "",
+        q9: "",
     };
 
     if (Object.entries(req.query).length > 0) {
         queries = req.query;
     }
 
-    res.render('survey2', { queries });
+    res.render('survey2', { queries, url });
+});
+
+app.get('/survey3', function(req, res){ 
+    let url = req.url;
+    let queries = {
+        q1: "",
+        q2: "",
+        q3: "",
+        q4: "",
+        q5: "",
+        q7a: "",
+        q7b: "",
+        q7c: "",
+        q7d: "",
+        q8: "",
+        q9: "",
+    };
+
+    if (Object.entries(req.query).length > 0) {
+        queries = req.query;
+    }
+
+    res.render('survey3', { queries, url });
+});
+
+app.get('/checkPage', function(req, res){ 
+    let url = req.url;
+    let queries = {
+        q1: "",
+        q2: "",
+        q3: "",
+        q4: "",
+        q5: "",
+        q7a: "",
+        q7b: "",
+        q7c: "",
+        q7d: "",
+        q8: "",
+        q9: "",
+    };
+
+    if (Object.entries(req.query).length > 0) {
+        queries = req.query;
+    }
+
+    res.render('checkPage', { queries, url });
+});
+
+app.get('/finish', function(req, res){ 
+    let url = req.url;
+    let queries = {
+        q1: "",
+        q2: "",
+        q3: "",
+        q4: "",
+        q5: "",
+        q7a: "",
+        q7b: "",
+        q7c: "",
+        q7d: "",
+        q8: "",
+        q9: "",
+    };
+
+    if (Object.entries(req.query).length > 0) {
+        queries = req.query;
+    }
+
+    res.render('finish', { queries, url });
 });
 
 app.get('/', function(req, res){ 

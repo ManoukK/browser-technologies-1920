@@ -1,7 +1,459 @@
-/* body {
-    background-color: cyan;
+:root {
+    --zwart: black;
+    --geel: #f9d71c;
+    --paars: #b71cf9;
+    --wit: white;
+    --dGrijs:#303030;
 }
 
-.prevQuestions {
-    display: none;
+body {
+    background-color: var(--dGrijs);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > p {
+    color: var(--wit);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > p > a { 
+    color: var(--geel);
+}
+
+main > a {
+    /* margin: 2em auto 5em auto; */
+    background-color: var(--geel);
+    color: var(--zwart);
+    padding: 1em 2em;
+    font-weight: 900;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px var(--zwart);
+    width: 10em;
+    text-align: center;
+    display: block;
+    margin: 3em auto 0em auto;
+    text-decoration: none;
+}
+
+main > a:hover {
+    background-color: var(--paars);
+}
+
+main > a:focus {
+    border-style: none;
+    background-color: var(--paars);
+}
+
+main > a:active {
+    box-shadow: 0 5px var(--zwart);
+    transform: translateY(4px);
+  }
+
+
+h1 {
+    text-align: center;
+    color: var(--geel);
+    font-weight: 900;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+header > p {
+    color: var(--wit);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: black;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-style: dashed;
+    border-color: var(--geel);
+    border-width: 5px;
+}
+
+h2 {
+    margin-top: 1.5em;
+    background-color: var(--geel);
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+}
+
+fieldset {
+    border-style: dashed;
+    border-color: var(--geel);
+    border-width: 5px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+    background-color: var(--zwart);
+}
+
+legend {
+    font-weight: 900;
+    color: var(--geel);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+label {
+    color: var(--wit);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.6em;
+
+    margin-bottom: 1em;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+section > p {
+    color: var(--wit);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+}
+
+input[type=text] {
+    display: block;
+    width: 13em;
+    font-size: 1em;
+    padding: 0.2em;
+}
+
+input[type=email] {
+    display: block;
+    width: 13em;
+    font-size: 1em;
+    padding: 0.2em;
+}
+
+input[type=radio] {
+    float: left;
+    margin-right: 1em;
+}
+
+input[type=checkbox] {
+    float: left;
+    margin-right: 1em;
+}
+
+textarea {
+    resize: none;
+    width: 14em;
+    height: 10em;
+    padding: 0.2em;
+    font-size: 1em;
+}
+
+form input[type=submit] {
+    margin: 2em 0.5em 5em 0.5em;
+    background-color: var(--geel);
+    color: var(--zwart);
+    padding: 1em 2em;
+    font-weight: 900;
+    font-size: 1em;
+
+
+    /* border-style: none;
+    box-shadow: 8px 8px 0px 0px var(--zwart); */
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px var(--zwart);
+}
+
+input[type=submit]:hover {
+    background-color: var(--paars);
+}
+
+input[type=submit]:focus {
+    border-style: none;
+    background-color: var(--paars);
+}
+
+input[type=submit]:active {
+    /* background-color: #3e8e41; */
+    box-shadow: 0 5px var(--zwart);
+    transform: translateY(4px);
+  }
+
+label:focus-within {
+    outline: 3px solid var(--paars);
+}
+
+label:hover {
+    outline: 3px solid var(--paars);
+}
+
+p > a:focus {
+    outline: 3px solid var(--paars);
+}
+
+p > a:hover {
+    outline: 3px solid var(--paars);
+}
+
+#urllink {
+    position: absolute;
+    margin-top: -1000em;
+}
+
+#buttonClickUrl {
+    padding: 2em 0.5em 5em 0.5em;
+    display: block; 
+    /* justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    background-color: var(--geel);
+    color: var(--zwart);
+    padding: 1em 2em;
+    font-weight: 900;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px var(--dGrijs);
+}
+
+#buttonClickUrl:hover {
+    background-color: var(--paars);
+}
+
+#buttonClickUrl:focus {
+    border-style: none;
+    background-color: var(--paars);
+}
+
+#buttonClickUrl:active {
+    /* background-color: #3e8e41; */
+    box-shadow: 0 5px var(--dGrijs);
+    transform: translateY(4px);
+  }
+
+
+.terug {
+    float: left;
+}
+
+.verder {
+    float: right;
+}
+
+.minderRuimte > label {
+    margin-top: -2em;
+}
+
+.minderRuimte > p {
+    margin-bottom: 2.5em;
+}
+
+.show {
+    animation-name: open;
+    animation-duration: 1500ms;
+    animation-fill-mode: forwards;
+}
+
+.hide {
+    animation-name: close;
+    animation-duration: 1500ms;
+    animation-fill-mode: forwards;
+}
+
+svg {
+    margin-top: 2em;
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#titelKlaar {
+    margin-top: 3em;
+}
+
+#belangrijk {
+    margin-top: 1.5em;
+    background-color: var(--zwart);
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-align: center;
+    color: var(--geel);
+}
+
+@keyframes close{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+    100%{
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+}
+
+@keyframes open{
+    0%{
+        display: none;
+        opacity: 0;
+        transform: rotateX(90deg);
+      }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* tablet */
+@media (min-width: 40em){
+    /* body {
+        background-color: var(--paars);
+    } */
+
+    main > p {
+        width: 25em;
+    }
+
+    header {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    header > p {
+        width: 25em;
+    }
+
+    form {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    .textlabel {
+        width: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=text] {
+        width: 24em;
+    }
+
+    input[type=email] {
+        width: 24em;
+    }
+
+    .textarea {
+        width: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .textarea > textarea {
+        width: 92%;
+
+    }
+
+    /* section {
+        background-color: var(--paars);
+    } */
+
+    section > p {
+        text-align: left;
+        width: 25em;
+    }
+
+    /* body {
+        background-color: var(--dGrijs);
+        background-color: var(--paars);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1 {
+        text-align: center;
+        background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--dGrijs) 1%);
+        margin-left: 5em;
+        margin-right: 5em;
+        color: var(--geel);
+        font-weight: 900;
+    }
+    
+    header > p {
+        color: var(--wit);
+        text-align: center;
+        margin-left: 13em;
+        margin-right: 13em;
+    }
+    
+    header {
+        background-color: black;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        border-style: dashed;
+        border-color: var(--geel);
+        border-width: 5px;
+    }
+    
+    h2 {
+        margin-top: 1.5em;
+        background-color: var(--geel);
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        text-align: center;
+    }
+    
+    fieldset {
+        border-style: dashed;
+        border-color: var(--geel);
+        border-width: 5px;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        padding-left: 2em;
+        background-color: var(--zwart);
+    }
+    
+    legend {
+        font-size: 1.5em;
+        font-weight: 900;
+        color: var(--geel);
+        padding-left: 3em;
+        padding-right: 3em;
+        text-align: center;
+    }
+    
+    fieldset > * {
+        color: var(--wit);
+    } */
+}
+
+/* desktop */
+/* @media (min-width: 65em){
+    body {
+        background-color: pink;
+    }
 } */

@@ -1,0 +1,162 @@
+<%- include ('partials/head.ejs') %>
+<%- include ('partials/header.ejs') %>
+<body class="body show">
+<!-- <h2>Kloppen deze antwoorden?</h2>
+<p>Lees jouw antwoorden nog even goed door voordat je deze opstuurt. Je kan hier gelijk je antwoorden aanpassen als dat nodig is.</p> -->
+<main>
+<p id="belangrijk">Check goed of alles klopt voordat je de enquete verstuurt.</p>
+
+<form>
+    <h2>Stap 1 van de 3</h2>
+    <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+    
+        <label for="fname" class="textlabel"> 1/9 Naam:
+            <input type="text" id="name" name="q1" value="<%= queries.q1 %>"> 
+        </label>
+
+        <br><br>
+    
+        <label for="email" class="textlabel"> 2/9 E-mail adres: 
+            <input type="text" id="email" name="q2" value="<%= queries.q2 %>">
+        </label>
+    
+        <br><br>
+    
+        <label for="telnmr" class="textlabel"> 3/9 Telefoonnummer: 
+            <input type="text" id="telnmr" name="q3" inputmode="numeric" pattern="[0-9]{2}[-][0-9]{8}" value="<%= queries.q3 %>">
+        </label>
+        
+        <br><br>
+
+            
+        <label for="geboorteDatum" class="textlabel"> 4/9 Leeftijd: 
+            <input type="text" id="geboorteDatum" name="q4" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{4}" placeholder="dd-mm-jjjj" value="<%= queries.q4 %>">
+        </label>
+    
+    </fieldset>
+    <br>
+    <h2>Stap 2 van de 3</h2>
+    <fieldset>
+        <legend>Jouw mening</legend>
+        <section class="minderRuimte"> 
+            <p>5/9 Welk cijfer geef je de minor WebDev?</p>
+            <label for="een"> 1 - Heel slecht
+                    <input type="radio" id="een" name="q5" value="1" <% if (queries.q5 === "1") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="twee"> 2 - Matig
+                    <input type="radio" id="twee" name="q5" value="2" <% if (queries.q5 === "2") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="drie"> 3 - Wel oke
+                    <input type="radio" id="drie" name="q5" value="3" <% if (queries.q5 === "3") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="vier"> 4 - Goed
+                    <input type="radio" id="vier" name="q5" value="4" <% if (queries.q5 === "4") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="vijf"> 5 - Fantastisch
+                    <input type="radio" id="vijf" name="q5" value="5" <% if (queries.q5 === "5") { %>
+                        checked 
+                    <% } %>>
+            </label>
+        </section>
+        <br>
+        <label class="textarea"> 6/9 Onderbouw je antwoord hieronder
+            <br>
+            <textarea maxlength="100" name="q6" value="<%= queries.q6 %>" placeholder="Keep it short (100 characters max)"><%= queries.q6 %></textarea>
+        </label>
+        <br>
+        <section class="minderRuimte"> 
+            <p>7/9 Over welke onderwerpen heb jij het meest geleerd?</p>
+            <label for="PE"> Progressive enhancement
+                <input type="checkbox" id="PE" name="q7a" value="PE" <% if (queries.q7a === "PE") { %>
+                    checked 
+                <% } %>>
+            </label>
+            <br>
+            <label for="SSR"> Server side renderen
+                <input type="checkbox" id="SSR" name="q7b" value="SSR" <% if (queries.q7b === "SSR") { %>
+                    checked 
+                <% } %>>
+            </label>
+            <br>
+            <label for="CSS"> Advanced css
+                <input type="checkbox" id="CSS" name="q7c" value="CSS" <% if (queries.q7c === "CSS") { %>
+                    checked 
+                <% } %>>
+            </label>
+            <br>
+            <label for="PRTTPS"> Rapid prototyping
+                <input type="checkbox" id="PRTTPS" name="q7d" value="PRTTPS" <% if (queries.q7d === "PRTTPS") { %>
+                    checked 
+                <% } %>>
+            </label>
+        </section>
+    </fieldset>
+    <br>
+    <h2>Stap 3 van de 3</h2>
+    <fieldset>
+        <legend>Jouw mening deel 2</legend>
+        <section class="minderRuimte"> 
+            <p>8/9 Hoe ben je aan deze minor gekomen?</p>
+            <label for="vriend"> Via een vriend(in)
+                    <input type="radio" id="vriend" name="q8" value="vriend" <% if (queries.q8 === "vriend") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="minorenmarkt"> Via de minorenmarkt
+                    <input type="radio" id="minorenmarkt" name="q8" value="minorenmarkt" <% if (queries.q8 === "minorenmarkt") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="docent"> Via een docent
+                    <input type="radio" id="docent" name="q8" value="docent" <% if (queries.q8 === "docent") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="websiteHvA"> Via de HvA website
+                    <input type="radio" id="websiteHvA" name="q8" value="websiteHvA" <% if (queries.q8 === "websiteHvA") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="anoniem"> Zeg ik liever niet
+                    <input type="radio" id="anoniem" name="q8" value="anoniem" <% if (queries.q8 === "anoniem") { %>
+                        checked 
+                    <% } %>>
+            </label>
+            <br>
+            <label for="anders"> Via een andere manier
+                    <input type="radio" id="anders" name="q8" value="anders" <% if (queries.q8 === "anders") { %>
+                        checked 
+                    <% } %>>
+            </label>
+
+        </section>
+    
+        <br>
+
+        <label class="textarea"> 9/9 Raad je deze minor aan anderen aan? Waarom wel/niet?
+            <br>
+            <textarea maxlength="100" name="q9" value="<%= queries.q9 %>" placeholder="150 characters max"><%= queries.q9 %></textarea>
+        </label>
+
+    </fieldset>
+
+        <input type="submit" value="Terug" formaction="/survey3" class="terug togglebutton">
+        <input type="submit" value="Verstuur" formaction="/finish" class="verder togglebutton">
+</form>

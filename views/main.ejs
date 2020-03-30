@@ -1,10 +1,20 @@
 <%- include ('partials/head.ejs') %>
+<body class="body show">
+    <main >
 <%- include ('partials/header.ejs') %>
-
 <p>
     Daarom vragen wij jou deze enquete zo eerlijk mogelijk in te vullen.
     Als je vragen en/of opmeringen hebt dan kan je ons bereiken via: 
     <a href="mailto:webdevminor@cmdmail.nl">webdevminor@cmdmail.nl</a>. Wij zijn ook bereikbaar
     via telefoon: <a href="tel:8080-808080">8080-808080</a>
 </p>
-<a href="survey1">Begin de enquete</a>
+
+<!-- test toggle -->
+<!-- <a href="#" id="togglebutton">Show/hide</a>
+<div id="MyId" class="show"> 
+   I want this div to toggle between the 'show' class and the 'hide' class
+</div> -->
+
+<a href="/survey1" class="togglebutton">Begin de enquete</a>
+
+<%- include ('partials/footer.ejs') %>
