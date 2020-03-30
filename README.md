@@ -35,6 +35,16 @@ Ik ben iets afgeweken van mijn wireframe. Na de feedbackgesprekken met Koop heb 
 
 Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit komt vooral omdat ik met verschillende input types wilde testen. 
 
+### Onderzoek
+Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hieronder zie je de linkjes:
+- [Feature detection]()
+- [De 8 features testen die we in de les hadden besproken]()
+- [Mijn website in 3 lagen]()
+- [Conclusie]()
+
+### Verdere ideeën voor op de website
+- Input van het formulier groter maken als de focus erop ligt. 
+
 
 ### Bronnen (code)
 - Hoe je een kopie knop kan maken: https://stackoverflow.com/questions/37658524/copying-text-of-textarea-in-clipboard-when-button-is-clicked
@@ -42,6 +52,7 @@ Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit 
 - Hoe je een event listener kan maken voor toetsenbord: https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event
 - Hoe je een event listener kan maken voor touch: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
 - Pagina switch animatie: https://stackoverflow.com/questions/39513705/make-html-element-disappear-with-css-animation
+- Feature detection voor het kopiëren van de url: https://stackoverflow.com/questions/36153898/how-to-detect-copy-to-clipboard-functionality-before-using-it
 
 ### Credits 
 - Daniel had ontdekt dat je input waardes kan opslaan in de url. Hij heeft mij hiermee geholpen zodat ik dat ook kon gebruiken. 
