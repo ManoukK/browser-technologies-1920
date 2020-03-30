@@ -30,3 +30,5 @@ Ik wil graag de antwoorden opslaan in queries vanuit de url. Deze antwoorden kan
 
 ### De website met css
 ![photo_2020-03-18_14-23-52](https://user-images.githubusercontent.com/45541885/76965237-3d83ac00-6924-11ea-821e-7869d0743512.jpg)
+
+
