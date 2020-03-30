@@ -24,11 +24,14 @@ Ik wil graag de antwoorden opslaan in queries vanuit de url. Deze antwoorden kan
 - Er moeten verschillende antwoord mogelijkheden zijn. 
 - De gebruiker moet terug kunnen waar diegene gebleven is en de vorige velden moeten ingevuld zijn. 
 
-
 ### De website zonder css
 ![photo_2020-03-18_14-27-55](https://user-images.githubusercontent.com/45541885/76965498-b08d2280-6924-11ea-9a1e-1015ae867de0.jpg)
 
 ### De website met css
 ![photo_2020-03-18_14-23-52](https://user-images.githubusercontent.com/45541885/76965237-3d83ac00-6924-11ea-821e-7869d0743512.jpg)
+
+Ik ben iets afgeweken van mijn wireframe. Na de feedbackgesprekken met Koop heb ik besloten het formulier op te splitsen in meerdere pagina’s en form’s. Zo voelt het, ook als je het zonder css invult, niet als een eindeloos lange formulier. 
+
+Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit komt vooral omdat ik met verschillende input types wilde testen. 
 
 
