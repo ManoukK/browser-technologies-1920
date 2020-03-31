@@ -41,7 +41,7 @@ Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hie
 - [Wat zijn progressive enhancement en feature detection?](https://github.com/ManoukK/browser-technologies-1920/wiki/Wat-zijn-progressive-enhancement-en-feature-detection%3F)
 - [De 8 features testen die we in de les hadden besproken](https://github.com/ManoukK/browser-technologies-1920/wiki/8-features-testen---opdracht-2)
 - [Feature detection van mijn website](https://github.com/ManoukK/browser-technologies-1920/wiki/Feature-detection---opdracht-2)
-- [Conclusie]()
+- [Conclusie](https://github.com/ManoukK/browser-technologies-1920/wiki/Conclusie)
 
 ### To Do voor als ik meer tijd had voor dit project
 - Input van het formulier groter maken als de focus erop ligt. 
