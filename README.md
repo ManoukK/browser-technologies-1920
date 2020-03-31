@@ -24,9 +24,40 @@ Ik wil graag de antwoorden opslaan in queries vanuit de url. Deze antwoorden kan
 - Er moeten verschillende antwoord mogelijkheden zijn. 
 - De gebruiker moet terug kunnen waar diegene gebleven is en de vorige velden moeten ingevuld zijn. 
 
-
-### De website zonder css
+### De wireflow
+#### De website zonder css
 ![photo_2020-03-18_14-27-55](https://user-images.githubusercontent.com/45541885/76965498-b08d2280-6924-11ea-9a1e-1015ae867de0.jpg)
 
-### De website met css
+#### De website met css
 ![photo_2020-03-18_14-23-52](https://user-images.githubusercontent.com/45541885/76965237-3d83ac00-6924-11ea-821e-7869d0743512.jpg)
+
+Ik ben iets afgeweken van mijn wireframe. Na de feedbackgesprekken met Koop heb ik besloten het formulier op te splitsen in meerdere pagina’s en form’s. Zo voelt het, ook als je het zonder css invult, niet als een eindeloos lange formulier. 
+
+Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit komt vooral omdat ik met verschillende input types wilde testen. 
+
+### Onderzoeken en documentatie 
+Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hieronder zie je de linkjes:
+- [Mijn website in 3 lagen](https://github.com/ManoukK/browser-technologies-1920/wiki/De-website-in-3-lagen---opdracht-2)
+- [Wat zijn progressive enhancement en feature detection?](https://github.com/ManoukK/browser-technologies-1920/wiki/Wat-zijn-progressive-enhancement-en-feature-detection%3F)
+- [De 8 features testen die we in de les hadden besproken](https://github.com/ManoukK/browser-technologies-1920/wiki/8-features-testen---opdracht-2)
+- [Feature detection van mijn website](https://github.com/ManoukK/browser-technologies-1920/wiki/Feature-detection---opdracht-2)
+- [Conclusie]()
+
+### To Do voor als ik meer tijd had voor dit project
+- Input van het formulier groter maken als de focus erop ligt. 
+- Een mooie offline pagina.
+- Bij het langzaam laden van een pagina een laadscherm laten zien. 
+
+### Bronnen (code)
+- [Hoe je een kopie knop kan maken](https://stackoverflow.com/questions/37658524/copying-text-of-textarea-in-clipboard-when-button-is-clicked)
+- [Laatste (feest) icoon](https://thenounproject.com/search/?q=party&i=1098631)
+- [Hoe je een event listener kan maken voor toetsenbord](https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event)
+- [Hoe je een event listener kan maken voor touch](https://developer.mozilla.org/en-US/docs/Web/API/Touch_events)
+- [Pagina switch animatie](https://stackoverflow.com/questions/39513705/make-html-element-disappear-with-css-animation)
+- [Feature detection voor het kopiëren van de url](https://stackoverflow.com/questions/36153898/how-to-detect-copy-to-clipboard-functionality-before-using-it)
+
+### Credits 
+- Daniel had ontdekt dat je input waardes kan opslaan in de url. Hij heeft mij hiermee geholpen zodat ik dat ook kon gebruiken. 
+- Bas gaf mij het idee om een pagina animatie te maken met javascript toggles. Ik wilde het eerst in AJAX doen maar dat lukte me niet.
+
+
