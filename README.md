@@ -35,6 +35,13 @@ Ik ben iets afgeweken van mijn wireframe. Na de feedbackgesprekken met Koop heb 
 
 Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit komt vooral omdat ik met verschillende input types wilde testen. 
 
+### Hoe heb ik de problemen uit mijn use case opgelost?
+#### Er moeten verschillende antwoordmogelijkheden zijn.
+De gebruiker gaat door een formulier heen met verschillende antwoordmogelijkheden. Zo kan de gebruiker met radio buttons 1 keuze maken of met checkboxes meerdere. Ook heeft de gebruiker de mogelijk een langer antwoord of verhaaltje te typen in een text area. Korte antwoorden worden geplaatst in een input type text. Er moeten ook meerdere waardes ingevuld worden zoals geboortedatum, telefoonnummer, emailadres en meningen. 
+
+#### De gebruiker moet terug kunnen waar diegene gebleven is en de vorige velden moeten ingevuld zijn.
+De gebruiker krijgt de kans om pauze te houden van het formulier. De waardes die de gebruiker invult (dit moet je nooit doen met wachtwoorden) worden opgeslagen in de url. Met de submit knop worden de waardes ook daadwerkelijk in de url geplaatst. De gebruiker kan nadat hij op submit heeft geklikt de url opslaan via de copy button of door de url in de browser te copy pasten. Zodra de gebruiker terug wilt en de juiste url in de browser zet, zal hij weer op de pagina komen waar hij was gebleven en de antwoorden die al waren ingevuld staan er weer alsof hij dat net nog heeft ingevuld. Dit werkt allemaal via de server dus ook zonder javascript en css werkt deze feature.   
+
 ### Tab probleem in firefox en safari
 Toen ik mijn site in firefox en safari ging testen kon ik al op de hoofdpagina niet met het toetsenbord erdoorheen. Ik heb gegoogled en blijkbaar ligt het aan de browser en de user instellingen. Ik probeerde dit probleem op te lossen met tab indexen (ook al is dat bad practice) maar ook dat werkte niet. 
 
