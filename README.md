@@ -35,7 +35,7 @@ Ik ben iets afgeweken van mijn wireframe. Na de feedbackgesprekken met Koop heb 
 
 Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit komt vooral omdat ik met verschillende input types wilde testen. 
 
-### Onderzoek
+### Onderzoeken en documentatie 
 Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hieronder zie je de linkjes:
 - [Mijn website in 3 lagen](https://github.com/ManoukK/browser-technologies-1920/wiki/De-website-in-3-lagen---opdracht-2)
 - [Wat zijn progressive enhancement en feature detection?](https://github.com/ManoukK/browser-technologies-1920/wiki/Wat-zijn-progressive-enhancement-en-feature-detection%3F)
