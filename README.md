@@ -35,6 +35,16 @@ Ik ben iets afgeweken van mijn wireframe. Na de feedbackgesprekken met Koop heb 
 
 Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit komt vooral omdat ik met verschillende input types wilde testen. 
 
+### Tab probleem in firefox en safari
+Toen ik mijn site in firefox en safari ging testen kon ik al op de hoofdpagina niet met het toetsenbord erdoorheen. Ik heb gegoogled en blijkbaar ligt het aan de browser en de user instellingen. Ik probeerde dit probleem op te lossen met tab indexen (ook al is dat bad practice) maar ook dat werkte niet. 
+
+Ik maak gebruik van de a tag en dat zou focusable moeten zijn maar in firefox en safari worden deze elementen niet gepakt.
+
+Dit probleem ligt aan de instellingen van de gebruiker en ik kan helaas niet oplossen. Ik vind het heel raar dat dit zo werkt en ik zou hier graag nog wel een oplossing voor willen. Misschien een html oplossing als dat nog semantisch blijft. 
+
+Hier staat onder andere het probleem beschreven en hoe je dat als gebruiker kan oplossen.
+https://stackoverflow.com/questions/11704828/how-to-allow-keyboard-focus-of-links-in-firefox/11713537
+
 ### Onderzoeken en documentatie 
 Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hieronder zie je de linkjes:
 - [Mijn website in 3 lagen](https://github.com/ManoukK/browser-technologies-1920/wiki/De-website-in-3-lagen---opdracht-2)
