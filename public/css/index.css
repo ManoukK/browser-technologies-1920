@@ -231,6 +231,7 @@ form .typeSubmit {
 .typeSubmit:hover {
     background-color: #b71cf9;
     background-color: var(--paars);
+    color: #fff;
     color: var(--wit);
 }
 
@@ -238,6 +239,7 @@ form .typeSubmit {
     border-style: none;
     background-color: #b71cf9;
     background-color: var(--paars);
+    color: #fff;
     color: var(--wit);
 }
 
