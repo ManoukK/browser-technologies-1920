@@ -38,6 +38,7 @@ Tijdens mijn proces heb ik hier en daar ook de vragen wat anders aangepakt. Dit 
 ### Onderzoek
 Om het overzicht te behouden heb ik mijn onderzoeken in mijn wiki geschreven hieronder zie je de linkjes:
 - [Mijn website in 3 lagen](https://github.com/ManoukK/browser-technologies-1920/wiki/De-website-in-3-lagen---opdracht-2)
+- [Wat zijn progressive enhancement en feature detection?](https://github.com/ManoukK/browser-technologies-1920/wiki/Wat-zijn-progressive-enhancement-en-feature-detection%3F)
 - [De 8 features testen die we in de les hadden besproken](https://github.com/ManoukK/browser-technologies-1920/wiki/8-features-testen---opdracht-2)
 - [Feature detection](https://github.com/ManoukK/browser-technologies-1920/wiki/Feature-detection---opdracht-2)
 - [Conclusie]()
