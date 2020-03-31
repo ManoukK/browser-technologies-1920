@@ -19,12 +19,13 @@ document.getElementsByClassName("togglebutton").addEventListener("keypress", fun
         document.getElementsByClassName("body").className = "hide";
     })
 
+if (document.execCommand('copy') == false) {
+    document.getElementById("urllink").style.display = "none";
+    document.getElementById("buttonClickUrl").style.display = "none";
+}
+
 function copy() {
     let textarea = document.getElementById("urllink");
     textarea.select();
     document.execCommand("copy");
-  }
-if (false == document.execCommand('copy')) {
-    document.getElementById("urllink").style.display = "none";
-    document.getElementById("buttonClickUrl").style.display = "none";
 }

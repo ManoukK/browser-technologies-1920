@@ -12,37 +12,37 @@
         <section class="minderRuimte"> 
             <p>8/9 Hoe ben je aan deze minor gekomen?</p>
             <label for="vriend"> Via een vriend(in)
-                    <input type="radio" id="vriend" name="q8" value="vriend" <% if (queries.q8 === "vriend") { %>
+                    <input type="radio" class="typeRadio" id="vriend" name="q8" value="vriend" <% if (queries.q8 === "vriend") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="minorenmarkt"> Via de minorenmarkt
-                    <input type="radio" id="minorenmarkt" name="q8" value="minorenmarkt" <% if (queries.q8 === "minorenmarkt") { %>
+                    <input type="radio" class="typeRadio" id="minorenmarkt" name="q8" value="minorenmarkt" <% if (queries.q8 === "minorenmarkt") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="docent"> Via een docent
-                    <input type="radio" id="docent" name="q8" value="docent" <% if (queries.q8 === "docent") { %>
+                    <input type="radio" class="typeRadio" id="docent" name="q8" value="docent" <% if (queries.q8 === "docent") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="websiteHvA"> Via de HvA website
-                    <input type="radio" id="websiteHvA" name="q8" value="websiteHvA" <% if (queries.q8 === "websiteHvA") { %>
+                    <input type="radio" class="typeRadio" id="websiteHvA" name="q8" value="websiteHvA" <% if (queries.q8 === "websiteHvA") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="anoniem"> Zeg ik liever niet
-                    <input type="radio" id="anoniem" name="q8" value="anoniem" <% if (queries.q8 === "anoniem") { %>
+                    <input type="radio" class="typeRadio" id="anoniem" name="q8" value="anoniem" <% if (queries.q8 === "anoniem") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="anders"> Via een andere manier
-                    <input type="radio" id="anders" name="q8" value="anders" <% if (queries.q8 === "anders") { %>
+                    <input type="radio" class="typeRadio" id="anders" name="q8" value="anders" <% if (queries.q8 === "anders") { %>
                         checked 
                     <% } %>>
             </label>
@@ -72,6 +72,6 @@
     <input type="hidden" class="filledQuestions" name="q7d" value="<%= queries.q7d %>">
 
 
-    <input type="submit" value="Terug" formaction="/survey2" class="terug togglebutton">
-    <input type="submit" value="Verder" formaction="/checkPage" class="verder togglebutton">
+    <input type="submit" value="Terug" formaction="/survey2" class="terug togglebutton typeSubmit">
+    <input type="submit" value="Verder" formaction="/checkPage" class="verder togglebutton typeSubmit">
 </form>

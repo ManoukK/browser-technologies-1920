@@ -11,31 +11,31 @@
         <section class="minderRuimte"> 
             <p>5/9 Welk cijfer geef je de minor WebDev?</p>
             <label for="een"> 1 - Heel slecht
-                    <input type="radio" id="een" name="q5" value="1" <% if (queries.q5 === "1") { %>
+                    <input type="radio" class="typeRadio" id="een" name="q5" value="1" <% if (queries.q5 === "1") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="twee"> 2 - Matig
-                    <input type="radio" id="twee" name="q5" value="2" <% if (queries.q5 === "2") { %>
+                    <input type="radio" class="typeRadio" id="twee" name="q5" value="2" <% if (queries.q5 === "2") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="drie"> 3 - Wel oke
-                    <input type="radio" id="drie" name="q5" value="3" <% if (queries.q5 === "3") { %>
+                    <input type="radio" class="typeRadio" id="drie" name="q5" value="3" <% if (queries.q5 === "3") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="vier"> 4 - Goed
-                    <input type="radio" id="vier" name="q5" value="4" <% if (queries.q5 === "4") { %>
+                    <input type="radio" class="typeRadio" id="vier" name="q5" value="4" <% if (queries.q5 === "4") { %>
                         checked 
                     <% } %>>
             </label>
             <br>
             <label for="vijf"> 5 - Fantastisch
-                    <input type="radio" id="vijf" name="q5" value="5" <% if (queries.q5 === "5") { %>
+                    <input type="radio" class="typeRadio" id="vijf" name="q5" value="5" <% if (queries.q5 === "5") { %>
                         checked 
                     <% } %>>
             </label>
@@ -49,25 +49,25 @@
         <section class="minderRuimte"> 
             <p>7/9 Over welke onderwerpen heb jij het meest geleerd?</p>
             <label for="PE"> Progressive enhancement
-                <input type="checkbox" id="PE" name="q7a" value="PE" <% if (queries.q7a === "PE") { %>
+                <input type="checkbox" class="typeCheck" id="PE" name="q7a" value="PE" <% if (queries.q7a === "PE") { %>
                     checked 
                 <% } %>>
             </label>
             <br>
             <label for="SSR"> Server side renderen
-                <input type="checkbox" id="SSR" name="q7b" value="SSR" <% if (queries.q7b === "SSR") { %>
+                <input type="checkbox" class="typeCheck" id="SSR" name="q7b" value="SSR" <% if (queries.q7b === "SSR") { %>
                     checked 
                 <% } %>>
             </label>
             <br>
             <label for="CSS"> Advanced css
-                <input type="checkbox" id="CSS" name="q7c" value="CSS" <% if (queries.q7c === "CSS") { %>
+                <input type="checkbox" class="typeCheck" id="CSS" name="q7c" value="CSS" <% if (queries.q7c === "CSS") { %>
                     checked 
                 <% } %>>
             </label>
             <br>
             <label for="PRTTPS"> Rapid prototyping
-                <input type="checkbox" id="PRTTPS" name="q7d" value="PRTTPS" <% if (queries.q7d === "PRTTPS") { %>
+                <input type="checkbox" class="typeCheck" id="PRTTPS" name="q7d" value="PRTTPS" <% if (queries.q7d === "PRTTPS") { %>
                     checked 
                 <% } %>>
             </label>
@@ -84,6 +84,6 @@
     <input type="hidden" class="filledQuestions" name="q8" value="<%= queries.q8 %>">
     <input type="hidden" class="filledQuestions" name="q9" value="<%= queries.q9 %>">
     
-    <input type="submit" value="Terug" formaction="/survey1" class="terug togglebutton">
-    <input type="submit" value="Verder" formaction="/survey3" class="verder togglebutton">
+    <input type="submit" value="Terug" formaction="/survey1" class="terug togglebutton typeSubmit">
+    <input type="submit" value="Verder" formaction="/survey3" class="verder togglebutton typeSubmit">
 </form>

@@ -1,17 +1,19 @@
 :root {
-    --zwart: black;
+    --zwart: #000;
     --geel: #f9d71c;
     --paars: #b71cf9;
-    --wit: white;
+    --wit: #fff;
     --dGrijs:#303030;
 }
 
 body {
+    background-color: #303030;
     background-color: var(--dGrijs);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main > p {
+    color: #fff;
     color: var(--wit);
     width: 80%;
     margin-left: auto;
@@ -19,50 +21,70 @@ main > p {
 }
 
 main > p > a { 
+    color: #f9d71c;
     color: var(--geel);
 }
 
 main > a {
     /* margin: 2em auto 5em auto; */
+    background-color: #f9d71c;
     background-color: var(--geel);
+    color: #000;
     color: var(--zwart);
+    padding: 16px 32px;
     padding: 1em 2em;
     font-weight: 900;
+    font-size: 16px;
     font-size: 1em;
     border: none;
     border-radius: 15px;
+    box-shadow: #000;
     box-shadow: 0 9px var(--zwart);
+    width: 160px;
     width: 10em;
     text-align: center;
     display: block;
+    margin: 48px auto 0px auto;
     margin: 3em auto 0em auto;
     text-decoration: none;
 }
 
 main > a:hover {
+    background-color: #b71cf9;
     background-color: var(--paars);
+    color: #fff;
+    color: var(--wit);
 }
 
 main > a:focus {
     border-style: none;
+    background-color: #b71cf9;
     background-color: var(--paars);
+    color: var(--wit);
+    color: var(--wit);
 }
 
 main > a:active {
+    box-shadow: 0 5px #000;
     box-shadow: 0 5px var(--zwart);
+    background-color: #490b63;
     transform: translateY(4px);
   }
 
 
 h1 {
     text-align: center;
+    color: #f9d71c;
     color: var(--geel);
     font-weight: 900;
+    margin-left: 3.2px;
     margin-left: 0.2em;
+    margin-right: 3.2px;
     margin-right: 0.2em;
 }
 
 header > p {
+    color: #fff;
     color: var(--wit);
     width: 80%;
     margin-left: auto;
@@ -70,18 +92,26 @@ header > p {
 }
 
 header {
+    background-color: #000;
     background-color: black;
+    padding-top: 24px;
     padding-top: 1.5em;
+    padding-bottom: 24px;
     padding-bottom: 1.5em;
     border-style: dashed;
+    border-color: #f9d71c;
     border-color: var(--geel);
     border-width: 5px;
 }
 
 h2 {
+    margin-top: 24px;
     margin-top: 1.5em;
+    background-color: #f9d71c;
     background-color: var(--geel);
+    padding-top: 3.2px;
     padding-top: 0.2em;
+    padding-bottom: 3.2px;
     padding-bottom: 0.2em;
     text-align: center;
 }
@@ -92,26 +122,35 @@ form {
 
 fieldset {
     border-style: dashed;
+    border-color: #f9d71c;
     border-color: var(--geel);
     border-width: 5px;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    padding-left: 2em;
+    padding: 48px 0em 48px 32px;
+    padding: 3em 0em 3em 2em;
+    background-color: #000;
     background-color: var(--zwart);
 }
 
 legend {
     font-weight: 900;
+    color: #f9d71c;
     color: var(--geel);
+    padding-left: 24px;
+    padding-right: 24px;
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
 
 label {
+    color: #fff;
     color: var(--wit);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 240px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 9.6px;
     width: 15em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -121,131 +160,166 @@ label {
 }
 
 section {
+    margin-bottom: 16px;
     margin-bottom: 1em;
 }
 
 section > p {
+    color: #fff;
     color: var(--wit);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 240px;
     width: 15em;
 }
 
-input[type=text] {
+.typeText {
     display: block;
+    width: 208px;
+    font-size: 16px;
+    padding: 3.2px;
     width: 13em;
     font-size: 1em;
     padding: 0.2em;
 }
 
-input[type=email] {
-    display: block;
-    width: 13em;
-    font-size: 1em;
-    padding: 0.2em;
-}
-
-input[type=radio] {
+.typeRadio {
     float: left;
+    margin-right: 16px;
     margin-right: 1em;
 }
 
-input[type=checkbox] {
+.typeCheck {
     float: left;
+    margin-right: 16px;
     margin-right: 1em;
 }
 
 textarea {
     resize: none;
+    width: 224px;
+    height: 160px;
+    padding: 3.2px;
+    font-size: 16px;
+
     width: 14em;
     height: 10em;
     padding: 0.2em;
     font-size: 1em;
 }
 
-form input[type=submit] {
+form .typeSubmit {
+    margin: 32px 8px 80px 8px;
     margin: 2em 0.5em 5em 0.5em;
+    background-color: #f9d71c;
     background-color: var(--geel);
+    color: #000;
     color: var(--zwart);
+    padding: 16px 32px;
     padding: 1em 2em;
     font-weight: 900;
+    font-size: 16px;
     font-size: 1em;
-
-
-    /* border-style: none;
-    box-shadow: 8px 8px 0px 0px var(--zwart); */
 
     border: none;
     border-radius: 15px;
+    box-shadow: 0 9px #000;
     box-shadow: 0 9px var(--zwart);
 }
 
-input[type=submit]:hover {
+.typeSubmit:hover {
+    background-color: #b71cf9;
     background-color: var(--paars);
+    color: var(--wit);
 }
 
-input[type=submit]:focus {
+.typeSubmit:focus {
     border-style: none;
+    background-color: #b71cf9;
     background-color: var(--paars);
+    color: var(--wit);
 }
 
-input[type=submit]:active {
+.typeSubmit:active {
     /* background-color: #3e8e41; */
+    box-shadow: 0 9px #000;
     box-shadow: 0 5px var(--zwart);
+    background-color: #490b63;
     transform: translateY(4px);
   }
 
-label:focus-within {
+label > input:focus {
+    outline: 3px solid #b71cf9;
+    outline: 3px solid var(--paars);
+}
+
+label > textarea:focus {
+    outline: 3px solid #b71cf9;
     outline: 3px solid var(--paars);
 }
 
 label:hover {
+    outline: 3px solid #b71cf9;
     outline: 3px solid var(--paars);
 }
 
 p > a:focus {
+    outline: 3px solid #b71cf9;
     outline: 3px solid var(--paars);
 }
 
 p > a:hover {
+    outline: 3px solid #b71cf9;
     outline: 3px solid var(--paars);
 }
 
 #urllink {
     position: absolute;
+    margin-top: -16000px;
     margin-top: -1000em;
 }
 
 #buttonClickUrl {
-    padding: 2em 0.5em 5em 0.5em;
+    padding: 16px 32px;
+    padding: 1em 2em;
     display: block; 
-    /* justify-content: center; */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
     margin-bottom: 1.5em;
+    background-color: #f9d71c;
     background-color: var(--geel);
+    color: #000;
     color: var(--zwart);
-    padding: 1em 2em;
     font-weight: 900;
+    font-size: 16px;
     font-size: 1em;
     border: none;
     border-radius: 15px;
+    box-shadow: 0 9px #303030;
     box-shadow: 0 9px var(--dGrijs);
 }
 
 #buttonClickUrl:hover {
+    background-color: #b71cf9;
     background-color: var(--paars);
+    color: #fff;
+    color: var(--wit);
 }
 
 #buttonClickUrl:focus {
     border-style: none;
+    background-color: #b71cf9;
     background-color: var(--paars);
+    color: #fff;
+    color: var(--wit);
 }
 
 #buttonClickUrl:active {
-    /* background-color: #3e8e41; */
+    box-shadow: 0 5px #303030;
     box-shadow: 0 5px var(--dGrijs);
+    background-color: #490b63;
     transform: translateY(4px);
   }
 
@@ -259,26 +333,32 @@ p > a:hover {
 }
 
 .minderRuimte > label {
+    margin-top: -32px;
     margin-top: -2em;
 }
 
 .minderRuimte > p {
+    margin-bottom: 40px;
     margin-bottom: 2.5em;
 }
 
-.show {
-    animation-name: open;
-    animation-duration: 1500ms;
-    animation-fill-mode: forwards;
+@supports (animation-duration: 1500ms){
+    .show {
+        animation-name: open;
+        animation-duration: 1500ms;
+        animation-fill-mode: forwards;
+    }
+    
+    .hide {
+        animation-name: close;
+        animation-duration: 1500ms;
+        animation-fill-mode: forwards;
+    }
 }
 
-.hide {
-    animation-name: close;
-    animation-duration: 1500ms;
-    animation-fill-mode: forwards;
-}
-
-svg {
+img {
+    margin-top: 32px;
+    width: 240px;
     margin-top: 2em;
     width: 15em;
     margin-left: auto;
@@ -287,15 +367,20 @@ svg {
 }
 
 #titelKlaar {
+    margin-top: 48px;
     margin-top: 3em;
 }
 
 #belangrijk {
-    margin-top: 1.5em;
+    margin-top: 24px;
+    background-color: #000;
     background-color: var(--zwart);
+    padding-top: 3.2px;
+    padding-bottom: 3.2px;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     text-align: center;
+    color: #f9d71c;
     color: var(--geel);
 }
 
@@ -331,44 +416,54 @@ svg {
 }
 
 /* tablet */
-@media (min-width: 40em){
+@media (min-width: 640px){
     /* body {
         background-color: var(--paars);
     } */
 
     main > p {
+        width: 400px;
         width: 25em;
     }
 
     header {
+        margin-left: 48px;
+        margin-right: 48px;
         margin-left: 3em;
         margin-right: 3em;
     }
 
     header > p {
+        width: 400px;
         width: 25em;
     }
 
     form {
+        margin-left: 48px;
+        margin-right: 48px;
         margin-left: 3em;
         margin-right: 3em;
     }
 
     .textlabel {
+        width: 400px;
         width: 25em;
         margin-left: auto;
         margin-right: auto;
     }
 
     input[type=text] {
+        width: 284px;
         width: 24em;
     }
 
     input[type=email] {
+        width: 284px;
         width: 24em;
     }
 
     .textarea {
+        width: 400px;
         width: 25em;
         margin-left: auto;
         margin-right: auto;
@@ -379,81 +474,9 @@ svg {
 
     }
 
-    /* section {
-        background-color: var(--paars);
-    } */
-
     section > p {
         text-align: left;
+        width: 400px;
         width: 25em;
     }
-
-    /* body {
-        background-color: var(--dGrijs);
-        background-color: var(--paars);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    h1 {
-        text-align: center;
-        background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--dGrijs) 1%);
-        margin-left: 5em;
-        margin-right: 5em;
-        color: var(--geel);
-        font-weight: 900;
-    }
-    
-    header > p {
-        color: var(--wit);
-        text-align: center;
-        margin-left: 13em;
-        margin-right: 13em;
-    }
-    
-    header {
-        background-color: black;
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-        border-style: dashed;
-        border-color: var(--geel);
-        border-width: 5px;
-    }
-    
-    h2 {
-        margin-top: 1.5em;
-        background-color: var(--geel);
-        padding-top: 0.2em;
-        padding-bottom: 0.2em;
-        text-align: center;
-    }
-    
-    fieldset {
-        border-style: dashed;
-        border-color: var(--geel);
-        border-width: 5px;
-        padding-top: 3em;
-        padding-bottom: 3em;
-        padding-left: 2em;
-        background-color: var(--zwart);
-    }
-    
-    legend {
-        font-size: 1.5em;
-        font-weight: 900;
-        color: var(--geel);
-        padding-left: 3em;
-        padding-right: 3em;
-        text-align: center;
-    }
-    
-    fieldset > * {
-        color: var(--wit);
-    } */
 }
-
-/* desktop */
-/* @media (min-width: 65em){
-    body {
-        background-color: pink;
-    }
-} */

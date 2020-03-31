@@ -10,26 +10,26 @@
         <legend>Persoonlijke gegevens</legend>
       
             <label for="fname" class="textlabel"> 1/9 Naam:
-                <input type="text" id="name" name="q1" placeholder="Don Joe" value="<%= queries.q1 %>"> 
+                <input type="text" class="typeText" id="name" name="q1" placeholder="Don Joe" value="<%= queries.q1 %>"> 
             </label>
 
             <br><br>
       
             <label for="email" class="textlabel"> 2/9 E-mail adres: 
-                <input type="text" id="email" name="q2" placeholder="emailHier@plaatsen.nl" value="<%= queries.q2 %>">
+                <input type="text" class="typeText" id="email" name="q2" placeholder="emailHier@plaatsen.nl" value="<%= queries.q2 %>">
             </label>
       
             <br><br>
       
             <label for="telnmr" class="textlabel"> 3/9 Telefoonnummer: 
-                <input type="text" id="telnmr" name="q3" inputmode="numeric" placeholder="06-1234678" pattern="[0-9]{2}[-][0-9]{8}" value="<%= queries.q3 %>">
+                <input type="text" class="typeText" id="telnmr" name="q3" inputmode="numeric" placeholder="06-1234678" pattern="[0-9]{2}[-][0-9]{8}" value="<%= queries.q3 %>">
             </label>
             
             <br><br>
 
               
             <label for="geboorteDatum" class="textlabel"> 4/9 Leeftijd: 
-                <input type="text" id="geboorteDatum" name="q4" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{4}" placeholder="dd-mm-jjjj" value="<%= queries.q4 %>">
+                <input type="text" class="typeText" id="geboorteDatum" name="q4" pattern="[0-9]{2}[-][0-9]{2}[-][0-9]{4}" placeholder="dd-mm-jjjj" value="<%= queries.q4 %>">
             </label>
       
         </fieldset>
@@ -43,8 +43,8 @@
         <input type="hidden" class="filledQuestions" name="q8" value="<%= queries.q8 %>">
         <input type="hidden" class="filledQuestions" name="q9" value="<%= queries.q9 %>">
 
-        <input type="submit" value="Terug" formaction="/" class="terug togglebutton">
-        <input type="submit" value="Verder" formaction="/survey2" class="verder togglebutton">
+        <input type="submit" value="Terug" formaction="/" class="terug togglebutton typeSubmit">
+        <input type="submit" value="Verder" formaction="/survey2" class="verder togglebutton typeSubmit">
 </form>
 
 
